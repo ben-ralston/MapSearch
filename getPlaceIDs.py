@@ -4,7 +4,9 @@ import json
 
 import pandas as pd
 
-api_key = 'AIzaSyAqjEsJCbxsOlkz6Dj5XyMWETpu1Q_jh1c'
+
+with open('key.txt') as file:
+    api_key = file.read().strip()
 
 
 def getPLaceID(name, latitude, longitude, radius):
